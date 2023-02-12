@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc</title>
+    <link rel="stylesheet" href="./calc.css" />
+  </head>
+  <body>
+    <main class="calc-container">
+      <section class="result-container">
+        <input id="result" type="text" value="" readonly />
+      </section>
+
+      <div class="keyboard">
+        <input type="button" value="CE" onclick="remove()" id="ce" />
+        <input type="button" value="C" onclick="clear()" />
+        <input type="button" value="%" onclick="button(value)" />
+        <input type="button" value="/" onclick="button(value)" id="tertiary" />
+        <input type="button" value="7" onclick="button(value)" />
+        <input type="button" value="8" onclick="button(value)" />
+        <input type="button" value="9" onclick="button(value)" />
+        <input type="button" value="x" onclick="button('*')" id="tertiary" />
+        <input type="button" value="4" onclick="button(value)" />
+        <input type="button" value="5" onclick="button(value)" />
+        <input type="button" value="6" onclick="button(value)" />
+        <input type="button" value="-" onclick="button(value)" id="tertiary" />
+        <input type="button" value="1" onclick="button(value)" />
+        <input type="button" value="2" onclick="button(value)" />
+        <input type="button" value="3" onclick="button(value)" />
+        <input type="button" value="+" onclick="button(value)" id="tertiary" />
+        <input type="button" value="x" onclick="button('**')" />
+        <input type="button" value="0" onclick="button(value)" />
+        <input type="button" value="." onclick="button(value)" />
+        <input type="button" value="=" onclick="calc()" id="quartiary" />
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
