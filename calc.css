@@ -54,7 +54,7 @@ body * {
     color: #ebebeb;
 }
 
-input[type="button"] {
+button {
     border: 0;
     width: 64px;
     height: 64px;
